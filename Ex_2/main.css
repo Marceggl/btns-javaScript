@@ -1,0 +1,110 @@
+:root {
+    --color-black: #000000;
+    --color-ink: #062F4F;
+    --color-posy: #813772;
+    --color-embers: #B82601;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.meinho {
+    margin-top: 50px;
+}
+
+.topBar {
+    margin: 0 auto;
+    width: 700px;
+    height: 100px;
+    border-radius: 50px 50px 0 0;
+    background-color: var(--color-posy);
+    position: relative;
+}
+
+.topBar>p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: aliceblue;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
+}
+
+nav {
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+    background-color: var(--color-ink);
+    padding: 5px 0 5px 0;
+}
+
+.btnTop {
+    margin-left: 18px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: var(--color-embers);
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.mainContent {
+    margin: 0 auto;
+    width: 700px;
+    background-color: var(--color-ink);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.margContent {
+    padding: 15px;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.button {
+    margin-left: 18px;
+    margin-top: 15px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: var(--color-embers);
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+}
+
+.button:hover {
+    transition: 1s;
+    background-color: #e05633;
+}
+
+footer {
+    background-color: var(--color-posy);
+    border-radius: 0 0 50px 50px;
+    width: 700px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.btnParag {
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+}
+
+.btnSize {
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

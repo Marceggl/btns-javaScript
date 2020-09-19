@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+    <title>Exercicio 1 da aula 4</title>
+
+</head>
+
+<body>
+    <div class="meinho">
+        <header class="topBar">
+            <p>Exercicio 2 aula 4 - Marcel Fernando</p>
+        </header>
+        <nav>
+            <button class="btnTop" onclick="cor()">Corsinha</button>
+            <a href="../index.html" class="btnTop">Voltar o Exercício</a>
+            <button class="btnTop" onclick="reload()">Recarregar</button>
+        </nav>
+        <article class="mainContent">
+            <div class="margContent">
+
+                <p class="cl1"></p>
+                <p class="cl2"></p>
+
+                <p class="cl3"></p>
+                <p class="cl4"></p>
+
+
+
+                <div class="buttons">
+                    <button class="button" id="bt1" onclick="pParag()">Primeiro paragrafo</button>
+                    <button class="button" id="bt2" onclick="PTresParag()">Três paragrafos</button>
+                    <button class="button" id="bt3" onclick="dellParag()">Apagar um paragrafo</button>
+                    <button class="button" id="bt4" onclick="newAlert()">Gerar um alert</button>
+                    <button class="button" id="bt5" onclick="styleCor()">Trocar paragrafo 1</button>
+                    <button class="button" id="bt6" onclick="styleSize()">Trocar paragrafo 4</button>
+                </div>
+            </div>
+        </article>
+        <footer>
+
+        </footer>
+    </div>
+    <script>
+        var txt, parags;
+        parags = window.document.getElementsByTagName("p");
+        const p0 = parags[0];
+        const p1 = parags[1];
+        const p2 = parags[2];
+        const p3 = parags[3];
+        const p4 = parags[4];
+    </script>
+</body>
+
+</html>

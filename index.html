@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Ex_1/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Exercicio 1 da aula 4</title>
+
+</head>
+
+<body>
+    <div class="meinho">
+        <header class="topBar">
+            <p>Exercicio 1 aula 4 - Marcel Fernando</p>
+        </header>
+        <nav>
+            <button class="btnTop" onclick="cor()">Corsinha</button>
+            <a href="../Ex_2/index.html" class="btnTop">Próximo exercicio</a>
+            <button class="btnTop" onclick="reload()">Recarregar</button>
+        </nav>
+        <article class="mainContent">
+            <div class="margContent">
+                <hr/>
+                <p class="cl1">Não, tente não. Faça ou não faça. Tentativa não há. </p>
+                <p class="cl1">Muitas das verdades que temos dependem de nosso ponto de vista.</p>
+                <hr/>
+                <p class="cl2">Somos feitos de carne, mas temos de viver como se fôssemos de ferro.</p>
+                <p class="cl2">A felicidade é um problema individual. Aqui, nenhum conselho é válido. Cada um deve procurar, por si, tornar-se feliz.</p>
+                <hr/>
+                <p class="cl3">Não importa quanto a vida possa ser ruim, sempre existe algo que você pode fazer, e triunfar. Enquanto há vida, há esperança.</p>
+                <p class="cl3">Quando achamos a matemática e a física teórica muito difíceis, voltamo-nos para o misticismo.</p>
+                <hr/>
+                <p class="cl4">De um trocado pro seu bruxo</p>
+                <p class="cl4">Temos que nos apegar a algo. Se não o fizermos, o mundo desce ao caos.</p>
+                <hr/>
+                <div class="buttons">
+                    <button class="button" id="bt1">Yoda - Star Wars</button>
+                    <button class="button" id="bt2">Sigmund Freud</button>
+                    <button class="button" id="bt3">Stephen Halking</button>
+                    <button class="button" id="bt4">The Witcher - Série</button>
+                </div>
+            </div>
+        </article>
+        <footer>
+
+        </footer>
+        <script>
+            //Carregando a página
+            setTimeout(function() {
+                alert("Gostou da página ? \nhehe");
+            }, 3000)
+
+
+            //propriedades usadas addlistener, getelementclassname, getelementid, innerhtml
+            //Declarando váriaveis e pegando elementos do HTML
+            //Paragrafo do topo
+            const pTop = document.getElementsByTagName("p");
+            //yoda
+            const cl1 = document.getElementsByClassName("cl1");
+            const cl1_p0 = cl1[0];
+            const cl1_p1 = cl1[1];
+            //Freud
+            const cl2 = document.getElementsByClassName("cl2");
+            const cl2_p0 = cl2[0];
+            const cl2_p1 = cl2[1];
+            //Halking
+            const cl3 = document.getElementsByClassName("cl3");
+            const cl3_p0 = cl3[0];
+            const cl3_p1 = cl3[1];
+            //The witcher
+            const cl4 = document.getElementsByClassName("cl4");
+            const cl4_p0 = cl4[0];
+            const cl4_p1 = cl4[1];
+            //botões
+            const btn1 = document.getElementById("bt1")
+            const btn2 = document.getElementById("bt2")
+            const btn3 = document.getElementById("bt3")
+            const btn4 = document.getElementById("bt4")
+            const btnTop = document.getElementById("btnTop")
+
+            //Eventos
+            btn1.addEventListener('click', function() {
+                cl1_p0.innerHTML = "Frase do Yoda - Star Wars";
+                cl1_p1.innerHTML = "Frase do Yoda - Star Wars";
+            })
+
+            btn2.addEventListener('click', function() {
+                cl2_p0.innerHTML = "Frase de Sigmund Freud";
+                cl2_p1.innerHTML = "Frase de Sigmund Freud";
+            })
+            btn3.addEventListener('click', function() {
+                cl3_p0.innerHTML = "Frase de Stephen Halking";
+                cl3_p1.innerHTML = "Frase de Stephen Halking";
+            })
+            btn4.addEventListener('click', function() {
+                cl4_p0.innerHTML = "Frases de The Witcher";
+                cl4_p1.innerHTML = "Frases de The Witcher";
+            })
+
+            function cor() {
+                pTop[0].style.color = "black";
+            }
+
+            function reload() {
+                document.location.reload(true)
+            }
+        </script>
+    </div>
+</body>
+
+</html>
